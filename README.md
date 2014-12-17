@@ -1,8 +1,8 @@
 mappify
 =======
 
-install:
+####install:
 
-npm install
-bower install
-gulp develop
+- npm install
+- bower install
+- gulp develop
