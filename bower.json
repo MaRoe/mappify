@@ -1,0 +1,45 @@
+{
+  "name": "mappify",
+  "version": "0.1.0",
+  "authors": [
+    "Daniel Keil <daniel.keil@zenubu.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.2.23",
+    "angular-route": "1.2.25",
+    "normalize-css": "~3.0",
+    "jQuery": "~2.1.1",
+    "leaflet": "0.7.x",
+    "lodash": "~2.4.1",
+    "jassa": "0.9.0-SNAPSHOT",
+    "bluebird": "~2.3.2",
+    "bootstrap": "3.2.0",
+    "Leaflet.awesome-markers": "~2.0.2",
+    "components-font-awesome": "~4.2.0",
+    "leaflet-plugins": "~1.2.0",
+    "leaflet-draw": "~0.2.3"
+  },
+  "overrides": {
+    "leaflet": {
+      "main": [
+        "dist/leaflet-src.js",
+        "dist/leaflet.css"
+      ]
+    },
+    "lodash": {
+      "main": [
+        "dist/lodash.js"
+      ]
+    },
+    "jassa": {
+      "main": []
+    },
+    "leaflet-plugins": {
+      "main": [
+        "layer/tile/Google.js"
+      ]
+    }
+  }
+}

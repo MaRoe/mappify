@@ -1,0 +1,58 @@
+{
+  "map": {
+    "tiles": {
+      "url": ""
+    },
+    "viewCenter": "",
+    "controls" : {
+      "x": ""
+    },
+    "popUp": {
+      "autoClose": true
+    }
+  },
+  "data": {
+  },
+  "services": {
+    "dbpedia": {
+      "displayName": "DBpedia",
+      "type": "sparql",
+      "serviceUrl": "http://dbpedia.org/sparql",
+      "defaultGraphUris": ["http://dbpedia.org"]
+    }
+  },
+  "concepts": {
+    "pub": {
+      "element": "?s a Pub . ?s isRecommendedBy ?y",
+      "v": "s"
+    }
+  },
+  "dataSources": {
+    "ds1": {
+      "service": {
+        "ref": "dbpedia"
+      },
+      "languages": {
+        "langPreference": [
+          "es",
+          "de",
+          "en",
+          ""
+        ]
+      },
+      "concept": {
+        "ref": "pub"
+      },
+      "sponateTemplate": {
+        "type": "serialized",
+        "data": {
+          "id": "?r",
+          "name": "bestLabel",
+          "latitude": "?lat",
+          "longitude": "?long",
+          "pic": "?d"
+        }
+      }
+    }
+  }
+}

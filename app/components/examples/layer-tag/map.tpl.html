@@ -1,0 +1,15 @@
+<ma-mappify datasource="">
+    <ma-layer name="castles and airports" id="">
+        <ma-marker concept="castle" icon="custom:leaflet" template-url="/template/example.tpl.html">
+        </ma-marker>
+        <ma-marker concept="airport" icon="custom:leaflet" template-url="/template/example.tpl.html"></ma-marker>
+    </ma-layer>
+    <ma-layer>
+        <!-- we use transclusion to directly inject the marker content template -->
+        <ma-marker concept="conceptC">
+            <div>
+                {{label}}
+            </div>
+        </ma-marker>
+    </ma-layer>
+</ma-mappify>
