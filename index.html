@@ -1,15 +1,11 @@
-<!doctype html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class=no-js ng-app=mappifyApp><!--<![endif]--><head><meta charset=utf-8><title>Mappify</title><meta name=description content=""><meta name=viewport content="width=device-width"><link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel=stylesheet type=text/css><script src="//maps.google.com/maps/api/js?v=3&sensor=false"></script><link rel=stylesheet href=styles/assets-b748e788.css><link rel=stylesheet href=styles/styles-db836a32.css></head><body ng-cloak><div ng-controller=AppCtrl style="height: 100%"><div class="col-lg-2 col-md-3 col-xs-4" style="padding: 0; height: 100%"><div ui-view=sidebar id=sidebar></div></div><div class="col-lg-10 col-md-9 col-xs-8" style="padding: 0"><div ui-view=map></div></div></div><script src=bower_components/jassa/jassa.min.js></script><script src=scripts/assets-9dc55250.js></script><script src=scripts/scripts-9bae4966.js></script><script>// global jassa object
-    jassa = new Jassa(Promise, function() {
+<!doctype html><!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--><!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--><!--[if IE 8]><html class="no-js lt-ie9"><![endif]--><!--[if gt IE 8]><!--><html class=no-js ng-app=mappifyApp><!--<![endif]--><head><meta charset=utf-8><title>Mappify</title><meta name=description content=""><meta name=viewport content="width=device-width"><link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel=stylesheet type=text/css><script src="//maps.google.com/maps/api/js?v=3&sensor=false"></script><link rel=stylesheet href=styles/assets-b748e788.css><link rel=stylesheet href=styles/styles-72ac71aa.css></head><body ng-cloak><div ng-controller=AppCtrl style="height: 100%"><div class="col-lg-3 col-md-4 col-xs-4" style="padding: 0; height: 100%"><div ui-view=sidebar id=sidebar></div></div><div class="col-lg-9 col-md-8 col-xs-8" style="padding: 0"><div ui-view=map></div></div></div><script src=bower_components/jassa/jassa.min.js></script><script src=scripts/assets-6c5985d2.js></script><script src=scripts/scripts-7a3eef58.js></script><script>// global jassa object
+    var jassa = new Jassa(Promise, function() {
         var jqXHR = $.ajax.apply(this, arguments);
-
         // todo: move to util method
-        //  - if no second argument is passed use this as default
-
         // r short form for inline result
         var r = Promise.resolve(jqXHR)
                 .cancellable()
                 .catch(Promise.TimeoutError, Promise.CancellationError, function(e) {
-                    //console.log('CANCELLED REQUEST');
                     jqXHR.abort();
                     throw e;
                 });
