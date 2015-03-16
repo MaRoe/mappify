@@ -5,13 +5,20 @@ mappify
 
 *NOTICE: the finale documentation will be deployed at 2015-03-18 *
   
-[![wercker status](https://app.wercker.com/status/c38d02adde751d9840a1075c10ff0acb/s "wercker status")](https://app.wercker.com/project/bykey/c38d02adde751d9840a1075c10ff0acb)  
-  
-last auto deployed demo:  [demo](http://danielkeil.github.io/mappify/#/) 
+###demo
+
+demo:  [demo](http://danielkeil.github.io/mappify/#/) 
+
+### Getting Started
+
+  - open mappify
+  - select "Load Config" and choose a predefined example
+  - you can play round with an preview by pressing "Refresh map" for an preview
+  - you can generate and download the AngularJS-app by selecting "Generate AngularJS App"
+
+###install:
 
 current develop branch: [link](https://github.com/danielkeil/mappify/tree/feature/datascource_support)
-
-####install:
 
 - npm install
 - bower install
