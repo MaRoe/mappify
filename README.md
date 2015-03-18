@@ -1,10 +1,5 @@
 mappify
 =======
-
-~~Due to the fact that jassa was update 2015-03-14 and bower only returns the new version, which won't start and behaves strangely. Mappify can not fetch any data.~~
-
-*NOTICE: the finale documentation will be deployed at 2015-03-18 *
-  
 ###demo
 
 demo:  [demo](http://danielkeil.github.io/mappify/#/) 
